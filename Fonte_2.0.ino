@@ -1,18 +1,18 @@
 //===========================================================Configurações iniciais====================================================//
 #include <LiquidCrystal.h>                                                    //Biblioteca do display
 #include <ResponsiveAnalogRead.h>                                             //Biblioteca para leituras analógicas
-LiquidCrystal lcd(3,2,9,10,11,12);                                            //Configura os pinos do display
-#define Read5V_Positivo A5                                                    //Leitura corrente +5V 
-#define Read5V_Negativo A3                                                    //Leitura corrente -5V
-#define Read12V_Positivo A6                                                   //Leitura corrente +12V
-#define Read12V_Negativo A4                                                   //Leitura corrente -12V
-#define ReadAdj  A2                                                           //Leitura corrente da saída ajustável
-#define ReadAdjVolt A1                                                        //Leitura tensão da saída ajustável
-#define Lm35 A7                                                               //Pino do Lm35
-#define Control0 7                                                            //Relé para saídas ajustável 
-#define Control1 8                                                            //Relé para saídas fixas 
-#define Fan 4                                                                 //Pino que aciona a ventilação                           
-#define AdjON 6                                                               //Botão para saída ajustável                       
+LiquidCrystal lcd(2,4,9,10,11,12);                                            //Configura os pinos do display
+#define Read5V_Positivo A0                                                    //Leitura corrente +5V 
+#define Read5V_Negativo A1                                                    //Leitura corrente -5V
+#define Read12V_Positivo A3                                                   //Leitura corrente +12V
+#define Read12V_Negativo A2                                                   //Leitura corrente -12V
+#define ReadAdj  A4                                                           //Leitura corrente da saída ajustável
+#define ReadAdjVolt A5                                                        //Leitura tensão da saída ajustável
+#define Lm35 A6                                                               //Pino do Lm35
+#define Control0 3                                                            //Relé para saídas ajustável 
+#define Control1 7                                                            //Relé para saídas fixas 
+#define Fan 6                                                                 //Pino que aciona a ventilação                           
+#define AdjON 8                                                               //Botão para saída ajustável                       
 #define FixedON 5                                                             //Botão para saídas fixas
 String AdjONStatus="OFF";                                                     //Status do botão ADJ
 String FixedONStatus="OFF";                                                   //Status do botão Fixed 
